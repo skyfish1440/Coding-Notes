@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--this is how to write comments-->
+<!--writing DOCTYPE html automatically formats it as HTML5. You would have to specify which older version you would like to use. BTW, DOCTYPE is not case-sensitive-->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--Meta tags are tags that defines information about the data (data describing data). This one defines the charcter set. "UTF-8" is just a very common character set. It encodes the most characters in 8-bits in order to make it efficient for most data. It goes up to 32-bits for less common characters. "UTF-32" is a static 32-bits, and as Unicode only requires 21 bits to encode its limit of 1,114,112 characters, it has a number of leading zeros that pad each code. This is inefficient and makes its data in English about 4 times larger than "UTF-8" or "UTF-16" on average.-->
+		<meta name="description" content="This is what you'd see when you search for this website">
+		<!--meta description gives a description of your website to things like Google and other web browsers. This tag is the description you read about a website when you find it on a search engine. Keep it brief or a search engine could penalize you by giving you less priority-->
+		<!--"meta" is the tag, "charset", "name", and "content" are the attributes (sometimes referred to as properties)-->
+		<meta name="author" content="skyfish1440">
+		<meta name="keywords" content="HTML, notes, practice, course, tutorial">
+		<meta name="viewport" content="width=device-width, intial-scale"1.0">
+		<!--sets how zoomed in on the page it shows up when you first open the website. device-width makes it not look like you're trying to read an entire sheet of text all at once.-->
+		<title>skyfish1440's HTML Course Notes</title>
+		<!--This is where the tab name is changed-->
+	</head>
+	<body style="background-color: grey;">
+	<!--colors the whole web page background-->
+		<h1>The Heading</h1>
+		<!--headings range from h1-h6, with 1 being highest and 6 being lowest. Use multiple of these to title sub sections of your articles-->
+		<hr/><!--Adds a sexy line divider known as horizontal rule-->
+		<!--single tags like <br/> and <hr/> have the forward slash after the letters instead of before like the closing tags-->
+		<p>paragraph</p>
+		<p>all notes will be written using paragraph tags</p>
+		<p>index.html is the home page of a site</p>
+		<p>notes started on May 21, 2022</p>
+    <p>finished course Jun 5, 2022</p>
+		<p>I can make things <b>bold</b>, <i>italicized</i>, or <b><i>both</i></b>.</p>
+		<!--I can create additional space between the displayed lines of text using a break, as shown--><br/> 
+		<s>crossed out</s>
+		<!--I can create even more space by stacking breaks-->
+		<br/><br/><br/>
+		<p>I can make words <big>big</big> or <small>small</small>. I can give something a subscript, such as in H<sub>2</sub>O, or superscript as in math, such as (3.14)r<sup>2</sup>.</p>
+		<!--
+		<p>comments are also useful at temporarily removing code</p>
+		-->
+		<p style="color: rgb(0, 255, 221); background-color: red;">With HTML, you can change style and color by adding attributes to a tag, but they are very basic and anything more advanced will be covered by CSS. If you use a more sophisticated text editor like Visual Studio Code, you get a sample color in the code and can move the color values on a slider.</p>
+		<hr/>
+		<!--website typically divided into header, main, and footer. These tags are not always necessary in doing a header, main, and footer, but it helps to make the HTML more readable and organized. these are examples of "wrapper tags" and would include head and body tags as well-->
+		<header>
+		<!--where the navigational stuff usually is on a website-->
+			<nav>
+			
+			</nav>
+		</header>
+		<main>
+		<!--the main content on a website-->
+			<article>
+				<section>
+					<h2></h2>
+				</section>
+				<section>
+					<h2></h2>
+						<aside>
+						<!--something not directly related to the content of the site, i.e. an advertisement or something-->
+						</aside>
+				</section>
+			</article>
+		</main>
+		<footer>
+		<!--where the additional links/navigational stuff/branding usually is on a website-->
+		</footer>
+		<hr/>
+		<!--Quick reference guide to HTML tags: https://www.w3schools.com/tags/default.asp-->
+		<a href="https://www.google.com" target="_blank"><!--target="_blank" makes link appear in new tab--><h2>This is how you would create a link to Google</h2></a>
+		<a href="page2.html">How we create navigation to page2</a>
+		<a href="dir1/page3.html">How we create navigation to page3 if page3 is within the folder dir1</a> <!--you would then create a link back to index.html on pages 2 & 3 to redirect back to homepage-->
+        <a href="picture.jpg">How we insert a picture that you have on the computer</a>
+        <a href="http://images6.fanpop.com/image/photos/40500000/Cat-cats-40547181-1680-1050.jpg">
+            <img width="150" height="93" src="http://images6.fanpop.com/image/photos/40500000/Cat-cats-40547181-1680-1050.jpg" alt="a picture of a cat"/> <!--how insert image of cat from a website--><!--alt is a backup if the image your trying to display no longer can be found. to keep aspect ratio, inspect image and view its dimensions. if you set either the width or height without defining the other, HTML will automatically adjust the other-->
+        </a> <!--makes img link back to original source-->
+        <video src="video.mp4" poster="thumbnail.jpg" autoplay loop controls width="500"><!--autoplay plays instantly--><!--loop to loop video--><!--controls width to change width-->text will display here IF viewer doesn't have right video format</video> <!--local video-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pQN-pnXPaVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--this is under share/embedded under a youtube video in order to be copied to a website like so-->
+        <ul>
+            <li>apples</li>
+            <li>oranges</li>
+            <li>mangos</li>
+        </ul>
+        <ol>
+            <li>apples</li>
+            <li>oranges</li>
+            <li>mangos</li>
+        </ol>
+        <ol type="1">
+            <li>apples</li>
+            <li>oranges</li>
+            <li>mangos</li>
+        </ol>
+        <ol type="a">
+            <li>apples</li>
+            <li>oranges</li>
+            <li>mangoes</li>
+        </ol>
+        <ol type="A">
+            <li>apples</li>
+            <li>oranges</li>
+            <li>mangoes</li>
+        </ol>
+        <ol type="i">
+            <li>apples</li>
+            <li>oranges</li>
+            <li>mangoes</li>
+        </ol>
+        <ol type="I">
+            <li>apples</li>
+            <li>oranges</li>
+                <li>item 1</li>
+            <li>mangoes</li>
+        </ol>
+        <dl>
+            <dt>Apples</dt>
+            <dd>-They are red</dd>        
+        </dl>
+        <!--ul unordered list, ol ordered list, dl description list-->
+        <table>
+            <thead>
+                <caption><h2>List of numbers</h2></caption>
+                <tr>
+                    <th>header1</th>
+                    <th>header2</th>
+                    <th>header3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>one</td>
+                    <td>two</td>
+                    <td>three</td>
+                    <td>and another one</td>
+                </tr>
+                <tr>
+                    <td colspan="2">four</td>
+                    <!--colspan sets the number of columns a single data cell takes up-->
+                    <td>five</td>
+                    <td>six</td>
+                </tr>
+            </tbody>
+        </table>
+        <!--
+        block and inline elements
+        block tags take up entire width of the page
+        inline tags only take up as much space as they need
+        you can line up multiple inline elements next to one another, but not block elements
+        links line up right next to each other, horizontal rule and paragraphs cannot and force next element to follow below them
+
+        spans and divs are containers
+        spans are inline, divs are block
+        -->
+        <span>span1</span>
+        <span>span2</span>
+    <hr>
+        <div>div1</div>
+        <div>div2</div>
+        <!--
+        inputs and forms
+        not actually functional in HTML, only defines the area where these elements would go
+        in order to have users put in their inputs into these areas, you will need to use another language like javascript
+        -->
+        <form>
+        <!--form often act as a wrapper for input elements-->
+            <input type="text" value="Enter your username"/> <!--text is displayed in text box--><!--value: script is automatically included in the box-->
+            <input type="password" /> <!--text is hidden in text box-->
+            
+            <textarea rows="10" cols="30">Enter a paragraph</textarea>
+            <input type="date"/>
+            <input type="email"/>
+            <input type="range"/>	
+            <input type="file"/>
+            <input type="checkbox"/>
+            <input type="checkbox"/>
+            <!--checkboxes can be selected as desired-->
+            <input type="radio" name="btn"/>
+            <input type="radio" name="btn"/>
+            <!--if multiple radio named the same, only one can be selected-->
+            <input type="submit"/>
+        </form>
+        <iframe src="https://giraffeacademy.com/" width="1000" height="800" frameborder="0">Sorry, your browser does not support this other website :/</iframe> 
+        <!--Iframe embeds another website inside your website and is fully functional-->
+        <iframe src="https://amazon.com/" width="1000" height="800" frameborder="0">Sorry, this other website doesn't like to be used as an iframe :/</iframe> 
+        <!--big websites often prevent other websites from using their sites as iframes through the use of some code on their site. the reason behind this is that the website could pose as Amazon or whomever and collect the users data, such as login and financial info, or other malicious activity-->
+    </body>
+</html>
